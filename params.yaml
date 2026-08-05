@@ -1,0 +1,50 @@
+# Docuparse Pipeline Parameters
+
+# Download Configuration
+download:
+  companies: ["META"]  # List of companies to download filings for
+  fiscal_years: [2024]  # List of fiscal years
+  filing_types: ["10-K", "10-Q"]  # Types of filings to download
+  output_dir: "data/raw"  # Output directory for downloaded files
+
+# Layout Detection Configuration
+layout_detection:
+  pages_to_process: "all"  # Options: "all", "first_5", or specific number
+  target_pdf: "2024_meta_10-k.pdf"  # Specific PDF to process, or "all" for all PDFs
+  enable_caption_extraction: true
+  detectron2_confidence_threshold: 0.5
+  layoutlmv3_ocr_confidence: 30
+  dpi: 200
+  
+# Text Extraction Configuration  
+text_extraction:
+  use_ocr_fallback: true
+  ocr_confidence_threshold: 60
+  preserve_layout: true
+
+# Table Extraction Configuration
+table_extraction:
+  flavor: "lattice"  # Options: "lattice", "stream" 
+  table_areas: null
+  columns: null
+  edge_tol: 50
+
+# Docling Configuration
+docling:
+  max_pages: null  # null for all pages, number for limit
+  enable_analysis: true
+  output_formats: ["json", "markdown"]
+  save_visualizations: false
+
+# Export Configuration
+export:
+  formats: ["json", "markdown", "csv"]  # Export formats to generate
+  include_summary: true  # Include pipeline summary report
+  output_dir: "data/exports"  # Output directory for final exports
+
+# General Configuration
+general:
+  output_format: "json"
+  save_visualizations: true
+  enable_progress_tracking: true
+  log_level: "INFO"
