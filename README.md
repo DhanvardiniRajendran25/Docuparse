@@ -131,14 +131,6 @@ Edit `params.yaml` to customize:
 - **Document AI**: Docling, pdfplumber, Camelot for extraction
 - **Validation**: SEC EDGAR API, XBRL parsing libraries
 
-## 👥 Team Contributions
-
-This project was developed by a collaborative team with the following contributions:
-
-- **Hemanth Rayudu** - 45%
-- **Peiying Chen** - 45%  
-- **Om Sailesh Raut** - 10%
-
 ---
 
 **Built for**: Financial document analysis, regulatory compliance, and automated data extraction from SEC filings.
