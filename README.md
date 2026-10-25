@@ -13,13 +13,6 @@ DocuParse is a complete pipeline that:
 - ✅ **Validates data** against official XBRL filings
 - 📈 **Benchmarks performance** and estimates costs
 
-## 🎥 Demo Video
-
-Watch the complete pipeline in action: [**DocuParse Pipeline Demo**](https://drive.google.com/file/d/1w8RPBch1nPV8BpZIw0tFLPD1BmK0rkfN/view?usp=sharing)
-
-## 📚 Interactive Tutorial
-
-Follow the complete implementation guide: [**DocuParse CodeLabs**](https://codelabs-preview.appspot.com/?file_id=1eoeyKHeNX_qYq6m8oL37XLQMEoLCK7Xv02sBSGAGbwg#0)
 
 ## Quick Start
 
